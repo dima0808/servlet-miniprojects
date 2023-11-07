@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Add Form</title>
+    <link type="text/css" rel="stylesheet" href="css/form-style.css">
+</head>
+<body>
+
+<h3>Add student</h3>
+
+<form action="MainServlet" method="GET">
+
+    <input type="hidden" name="command" value="ADD" />
+
+    <table>
+        <tbody>
+            <tr>
+                <td><label>First name:</label></td>
+                <td><label><input type="text" name="firstName" /></label></td>
+            </tr>
+            <tr>
+                <td><label>Last name:</label></td>
+                <td><label><input type="text" name="lastName" /></label></td>
+            </tr>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><label><input type="text" name="email" /></label></td>
+            </tr>
+            <tr>
+                <td><label> </label></td>
+                <td><label><input type="submit" value="Save" /></label></td>
+            </tr>
+        </tbody>
+    </table>
+
+</form>
+
+</body>
+</html>
